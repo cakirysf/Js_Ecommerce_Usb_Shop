@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Webisite Using Html, Css, JavaScript</title>
+    <!-- bootstrap cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- IconScout CDN Link-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <!-- Google Fonts (Montserrat) Link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,200;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <!-- Swiper Js Slider -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Style CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/slider.css">
+
+    <!-- zemin <style>body{background-image: url("./images/bg-texture.png");}</style>  -->   
+</head>
+<body>
+    <!-- ===========  NAVBAR START =========== -->
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html"><h4>USB BANK</h4></a>
+            <ul class="nav__menu">
+                <li><a href="index.html" class="active">Ana Sayfa</a></li>
+                <li><a href="#">128 GB</a></li>
+                <li><a href="#">256 GB</a></li>
+                <li><a href="#">512 GB</a></li>
+                <li><a href="#">1 TB</a></li>
+
+            </ul>
+            <ul class="menu__icons">    
+                <li><i class="bi bi-person"></i></li>
+                <li><i class="bi bi-search"></i></li>
+                <!-- sepete tıklandığında toggleModal fonksiyonunu tıklama olayına atadık -->
+                <li class="basket__icon" onclick="toggleModal()"><i class="bi bi-bag"></i>
+                <span class="usb__count basket__count"></span>
+                </li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+<!-- ===========  NAVBAR END =========== -->
+
+
+<!-- ===========  HEADER START =========== -->
+    <header>
+        <div class="container slider-container">
+            <div class="slides">
+              <div class="slide">
+                <img src="./images/slider1.jpg" alt="Slide 1">
+                <div class="slide-content">
+                  <h2>USB BANK WEBSİTE</h2>
+                  <p>Quality USB</p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="./images/slider2.jpg" alt="Slide 2">
+                <div class="slide-content">
+
+                </div>
+              </div>
+              <div class="slide">
+                <img src="./images/slider3.jpg" alt="Slide 3">
+                <div class="slide-content">
+
+                </div>
+              </div>
+            </div>
+            
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+          </div>
+    </header>
+<!-- ===========  HEADER END =========== -->
+
+<!-- ===========  CATEGORIES START =========== -->
+<section class="categories store">
+    <div class="container categories__container">
+         
+        <div class="categories__left filter__background">
+                <h1>ÜRÜNLER</h1>
+                <ul class="filter">
+ <!--                    <li class="active">Tümü</li>
+                    <li>1 TB</li>
+                    <li>512 GB</li>
+                    <li>256 GB</li>
+                    <li>128 GB</li>
+                    <li>64 GB</li>
+                    <li>32 GB</li> -->
+                </ul>
+                <p>Tüm USB bellek çeşitleri USB BANK'ta hemen incele</p>
+                <a href="#" class="btn">HIZLI SİPARİŞ</a>
+        </div>
+<!-- ÜRÜN TANIMLAMA -->
+        <div class="categories__right">
+<!--                 <div class="category">
+                   <div class="row usb__card"><img src="./images/usb/1.jpg" alt="" class="img__usb" width="260px" height="280px" ></div> 
+                   <div class="usb__details"> 
+                   <span>1 TB</span> <br/>
+                    <span>Kingston</span> <br/>
+                    <span class="usb__star-rate">
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i> <br/>
+                        <span class="gray">1938 gösterim</span> 
+                    </span><br/>
+                </div>
+                    <p class="usb__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, velit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, velit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, velit?</p><br/>
+                    <div>
+                        <span class="price">50TL</span>
+                        <span class="old__price">70TL</span>
+                    </div>
+                    <button class="btn__siparisVer">Sepete Ekle</button>
+                </div>
+
+                <div class="category">
+                    <div class="row usb__card"><img src="./images/usb/2.jpg" alt="" 
+                     class="img__usb"   width="260px" height="280px" ></div> 
+                    <div class="usb__details"> 
+                    <span>1 TB</span> <br/>
+                     <span>Kingston</span> <br/>
+                     <span class="usb__star-rate"> 
+                         <i class="bi bi-star-fill active"></i>
+                         <i class="bi bi-star-fill"></i>
+                         <i class="bi bi-star-fill"></i>
+                         <i class="bi bi-star-fill"></i>
+                         <i class="bi bi-star-fill"></i> <br/>
+                         <span class="grey">1938 gösterim</span>
+                     </span><br/>
+                 </div>
+                     <p class="usb__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, velit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, velit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, velit?</p><br/>
+                     <div>
+                         <span class="price">50TL</span>
+                         <span class="old__price">70TL</span>
+                     </div>
+                     <button class="btn__siparisVer">Sepete Ekle</button>
+                 </div> -->
+        </div>
+    </div>
+</section>
+
+
+<!-- ===========  CATEGORIES END =========== -->
+
+<!-- ===========  BASKET START =========== -->
+
+    <div class="basket__modal">
+        <div class="basket__items">
+            <i class="bi bi-x" onclick="toggleModal()"></i>
+                <h2 class="basket__title">Sepetteki Ürünler</h2>
+                <ul class="basket__list">
+                   <li class="basket__item">
+                    <p>Sepette herhangi bir ürün bulunmamaktadır.</p>
+                   </li>
+
+              <li class="basket__item">
+                    <!-- <img src="# alt=" width="100" height="100" /> -->
+                    <div class="basket__item-info">
+                        <h3 class="usb__name"></h3>
+                        <span class="usb__price"></span> <br/>
+                        <span class="usb__remove"></span>
+                    </div>
+                    <div class="usb__count">
+                        <span class="decrease"></span>
+                        <span class="mx_2"></span>
+                        <span class="increase"></span>
+                    </div>
+                </li>
+            </ul>
+            
+            <div class="basket__total">
+                <span style="font-weight:bold; font-size: 24px; margin-bottom: 3px;color:black" class="total__price"></span>
+                <button class="btn__purple btnCheck" >Sepeti Onayla</button>
+                
+            </div>
+
+        </div>
+    </div>
+
+
+<!-- ===========  BASKET END =========== -->
+
+
+
+<!-- ===========  FOOTER START =========== -->
+
+<!-- <footer>
+       
+    <div class="footer__copyright">
+        <small>Copright &copy; USB BANK | Yusuf ÇAKIR</small>
+    </div>
+</footer> -->
+
+<!-- ===========  FOOTER END =========== -->
+
+
+
+
+
+
+<!-- ===========  JAVASCRIPT STAR =========== -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="main.js"></script>
+<script src="app.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      //when window width is >=600 büyük ekranlar için 600 boyut sonrası ayarlama
+      breakpoints:{
+        600:{
+            slidesPerView:2
+        }
+      }
+    });
+  </script>
+
+  <!-- slider code -->
+  <script>
+    let currentSlide = 0;
+  
+    function showSlides() {
+      const slides = document.querySelector('.slides');
+      const slideWidth = document.querySelector('.slide').clientWidth;
+  
+      slides.style.transform = `translateX(${-slideWidth * currentSlide}px)`;
+    }
+  
+    function plusSlides(n) {
+      currentSlide += n;
+      const totalSlides = document.querySelectorAll('.slide').length;
+  
+      if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+      } else if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+      }
+  
+      showSlides();
+    }
+  
+    showSlides();
+  </script>
+
+<!-- ===========  JAVASCRIPT END =========== -->
+
+</body>
+</html>
