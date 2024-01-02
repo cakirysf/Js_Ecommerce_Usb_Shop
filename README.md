@@ -21,4 +21,4 @@
  
 <h1>Proje Görüntüsü</h1>
 
-![](image/web-gif.gif)
+![](images/web-gif.gif)
