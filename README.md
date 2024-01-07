@@ -7,7 +7,7 @@
 <p>Bu küçük projede JSON yapısını kullanarak veri gönderimi yapılmış olup, ürünler kategorilerine göre sıralanabilir ve farklı özellikleri yansıtacak şekilde yayınlanmıştır.</p>
 
 <ul>
-  <li>JavaScript Code/ JavaSciprt Kodları kullanıldı</li>
+  <li>JavaScript Code/ JavaScript Kodları kullanıldı</li>
   <li>Css units for responsive desing / Duyarlı tasarım için CSS</li>
   <li>Css transitions & animations /CSS geçi̇şleri̇ ve animasyonlar</li>
   <li>Css media queries / CSS medya sorguları</li>
